@@ -1,20 +1,20 @@
 public class ObjURL {
-    String url;
+    String Url;
     String Titulo;
     String Fecha;
 
-    public ObjURL(String uRL, String titulo, String fecha) {
-        url = URL;
-        Titulo = titulo;
+    public ObjURL(String fecha, String titulo, String url) {
         Fecha = fecha;
+        Titulo = titulo;
+        Url = url;
     }
 
-    public String getURL() {
-        return URL;
+    public String getUrl() {
+        return Url;
     }
 
-    public void setURL(String uRL) {
-        URL = uRL;
+    public void setUrl(String url) {
+        Url = url;
     }
 
     public String getTitulo() {
@@ -32,5 +32,4 @@ public class ObjURL {
     public void setFecha(String fecha) {
         Fecha = fecha;
     }
-
 }
