@@ -18,9 +18,11 @@ public class Menu {
             System.out.println("1) Ir a una URL");
             System.out.println("2) Retroceder una URL");
             System.out.println("3) Mostrar historial");
-            System.out.println("4) Salir");
+            System.out.println("4) para ver la URL actual");
+            System.out.println("5) Salir ");
 
             int opt = m.ValidarEntero(sc);
+            System.out.println();    
 
             switch (opt) {
 
@@ -38,6 +40,10 @@ public class Menu {
                     break;
 
                 case 4:
+                    m.MostrarUrlActual(pila);
+                    break;
+
+                case 5:
                     System.out.println("Hasta luego");
                     continuar = false;
                     break;
