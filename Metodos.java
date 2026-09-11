@@ -61,5 +61,16 @@ public class Metodos {
             System.out.println(o.getUrl());
         }
     }
+    
+    public void MostrarUrlActual(Stack<ObjURL> pila) {
+        if (!pila.empty()) {
+            ObjURL o = pila.peek();
+            System.out.println("La pagina actual es: " + o.getUrl());
+        } else {
+            System.out.println("No hay paginas visitadas aun");
+            System.out.println();
+        }
+    }
+
 }
 
