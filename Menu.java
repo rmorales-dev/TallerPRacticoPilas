@@ -19,7 +19,7 @@ public class Menu {
             System.out.println("2) Retroceder una URL");
             System.out.println("3) Mostrar historial");
             System.out.println("4) para ver la URL actual");
-            System.out.println("5) Salir");
+            System.out.println("5) Salir ");
 
             int opt = m.ValidarEntero(sc);
             System.out.println();    
