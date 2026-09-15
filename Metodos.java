@@ -51,17 +51,25 @@ public class Metodos {
     public Stack<ObjURL> Retroceder(Stack<ObjURL> pila) {
         if (!pila.empty()) {
             pila.pop();
+            System.out.println("Se ha retrocedido a la pagina anterior");
+        }else {
+            System.out.println("No hay paginas previamente visitadas para regresar");
         }
 
         return pila;
     }
 
     public void MostrarHistorial(Stack<ObjURL> pila) {
-        for (ObjURL o : pila) {
-            System.out.println(o.getUrl());
+        if (!pila.empty()) {
+            for (ObjURL o : pila) {
+                System.out.println(o.getUrl());
+            }
+        } else {
+            System.out.println("No hay existe historial aun");
+            System.out.println();
         }
     }
-    
+
     public void MostrarUrlActual(Stack<ObjURL> pila) {
         if (!pila.empty()) {
             ObjURL o = pila.peek();
@@ -73,4 +81,3 @@ public class Metodos {
     }
 
 }
-
